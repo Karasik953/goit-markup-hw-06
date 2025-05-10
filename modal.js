@@ -9,4 +9,4 @@ function closeModal() {
 }
 
 // Додаємо слухач на кнопку з хрестиком
-modalCloseButton.addEventListener('click', closeModal);
+modalCloseButton.addEventListener('click', closeModal);                                                                      
