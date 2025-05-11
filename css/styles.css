@@ -774,7 +774,7 @@ button {
 }
 
 .logo-container {
-    margin-right: 0px;
+
     text-align: center;
 }
 
@@ -930,14 +930,12 @@ button {
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
+        row-gap: 72px;
+        padding-right: 24px;
     }
 
-    .flex-footer {
-        width: calc(50% - 12px); /* 50% мінус піввідступу зліва і справа */
-    }
 
     .logo-container {
-        margin-right: 32px;
         text-align: left;
         order: 1;
     }
@@ -952,6 +950,13 @@ button {
         margin-bottom: 0;
         text-align: left;
         order: 1;
+        margin-right: 216px;
+
+        
+    }
+
+    .p-input-footer {
+        text-align: left;
     }
 
     .footer-input {
@@ -984,6 +989,7 @@ button {
     .btn-footer {
         min-width: 165px;
         height: 40px;
+        margin-right: 259px;
     }
 }
 
