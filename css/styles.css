@@ -789,6 +789,11 @@ button {
 .social-container {
     text-align: center;
     margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+.footer-input {
+    text-align: center;
 }
 
 .footer-logo {
@@ -850,6 +855,7 @@ button {
 
 .form-footer {
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -867,6 +873,7 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    margin-top: 16px;
 }
 
 .input-footer::placeholder {
@@ -874,9 +881,7 @@ button {
 }
 
 
-.footer-input {
-    margin-left: 80px;
-}
+
 
 .page-footer {
     background-color: #2e2f42;
@@ -889,6 +894,7 @@ button {
 .btn-footer {
     min-width: 165px;
     height: 40px;
+    width: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -902,8 +908,143 @@ button {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 16px;
 }
 
 .svg-foter-tg {
+    fill: #FFFFFF;
     margin-left: 16px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:1158px) {
+    .page-footer {
+        padding: 100px 0;
+    }
+
+    .div-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .flex-footer {
+        width: calc(50% - 12px); /* 50% мінус піввідступу зліва і справа */
+    }
+
+    .logo-container {
+        margin-right: 32px;
+        text-align: left;
+        order: 1;
+    }
+
+    .p-footer {
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .social-container {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        order: 1;
+    }
+
+    .footer-input {
+        flex: 0 0 100%; /* займає весь рядок */
+        margin-top: 32px;
+        order:2;
+    }
+    .footer-svg a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-svg svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .form-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .input-footer {
+        width: 264px;
+        height: 40px;
+        padding-left: 16px;
+    }
+
+    .btn-footer {
+        min-width: 165px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .page-footer {
+        padding: 100px 0;
+    }
+
+    .div-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-right: 32px;
+        text-align: left;
+    }
+
+    .p-footer {
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .social-container {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .footer-input {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .footer-svg a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-svg svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .form-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .input-footer {
+        width: 264px;
+        height: 40px;
+        padding-left: 16px;
+    }
+
+    .btn-footer {
+        min-width: 165px;
+        height: 40px;
+    }
 }
