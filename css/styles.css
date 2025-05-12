@@ -74,7 +74,12 @@ button {
         max-width: 1158px;
         padding: 0 15px;
         }
+
+    
 }
+
+
+
 
 
 /* header */
@@ -127,6 +132,10 @@ button {
     fill: #2f2f37;
     justify-content: center;
     align-items: center;
+}
+
+.adress-mobile {
+     font-style:normal
 }
 
 @media screen and (min-width: 768px) {
@@ -372,7 +381,7 @@ button {
 /* first-section */
 
 .hone-section {
-    padding: 188px 0;
+    padding: 67px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     max-width:1440px;
     background-repeat: no-repeat;
@@ -422,12 +431,22 @@ button {
 }
 
 @media screen and (min-width:768px) {
+    .hone-section {
+        padding: 112px 0;
+    }
     .hone-styles {
         font-size: 56px;
     }   
 }
 
+@media screen and (min-width:1158px) {
+    .hone-section {
+        padding: 188px 0;
+    }
+}
 /* second-section */
+
+
 
 .ul-two {
     display: inline-block;
@@ -442,6 +461,11 @@ button {
 .div-svg {
     display: none;
 }
+
+.features-section {
+    padding: 96px 0;
+}
+
 
 .h-two-section {
     font-weight: 700;
@@ -476,8 +500,9 @@ button {
     text-align: start;
   }
   .main-two-container {
-    margin-top: 96px;
+    margin-top: 0px;
 }
+
 
   .lishka {
       flex-basis: calc(50% - 12px);
@@ -489,6 +514,11 @@ button {
     .div-svg {
         display: flex;
     }
+
+    .features-section {
+        padding: 120px 0;
+    }
+
     .lishka {
         flex-basis: calc(25% - 18px); /* 4 в ряд */
   }
@@ -501,7 +531,9 @@ button {
         line-height: 1.2;
         color: #2e2f42;
     }
-
+    .main-two-container {
+        margin-top: 0px;
+}
     .div-svg {
         display: flex;
         align-items: center;
@@ -540,7 +572,7 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    margin-bottom: 8px;
+    margin-top: 32px;
 
 }
 
@@ -578,7 +610,7 @@ button {
 
 .three-section {
     background-color: #f4f4fd;
-    padding: 192px 0;
+    padding: 96px 0;
 }
 
 .page-h {
@@ -592,21 +624,20 @@ button {
     margin-bottom: 72px;
 }
 
-.div-p-h {
-    padding: 32px 0
-}
+
 
 
 .page-li-three {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
+
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
-    height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    height: 428px;
 }
+
+
 
 .p-three-section {
     line-height: 1.5;
@@ -614,6 +645,8 @@ button {
     text-align: center;
     color: #434455;
     text-align: center;
+
+    margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -638,6 +671,10 @@ button {
         display: flex;
         flex-wrap: nowrap;
 }
+    .three-section {
+        background-color: #f4f4fd;
+        padding: 120px 0;
+}
 }
 
 
@@ -654,6 +691,11 @@ button {
     margin-bottom: 72px;
 }
 
+.div-four-sec {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .our {
     display: flex;
@@ -667,7 +709,6 @@ button {
 .page-li-four {
     box-shadow: 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    height: 400px;
     width: 288px;
 
 }
@@ -685,7 +726,7 @@ button {
 }
 
 .iconi-img {
-    height: 280px;
+    height: auto;
 }
 
 .p-over {
@@ -714,7 +755,6 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 32px;
     margin-left: 16px;
 }
 
@@ -728,8 +768,8 @@ button {
 }
 
 .serr {
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-bottom: 96px;
+    padding-top: 96px;
 }
 
 @media screen and (min-width: 768px) {
@@ -738,16 +778,19 @@ button {
         flex-wrap: wrap;
         gap: 24px;
         row-gap: 72px;
+
+    
+}
+    .serr {
+        padding-bottom: 120px;
+        padding-top: 120px;
 }
     .page-li-four {
         width: 356px;
-        height: 420px;
         width: calc((100% - 24px) / 2);
 
 }
-    .iconi-img {
-        height: 300px;
-}
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -764,7 +807,7 @@ button {
 
 /* footer */
 .page-footer {
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .div-footer {
