@@ -430,6 +430,13 @@ button {
     background: #404bbf;
 }
 
+
+@media (min-resolution: 2x) {
+    .hone-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office2.jpg);
+    }
+}
+
 @media screen and (min-width:768px) {
     .hone-section {
         padding: 112px 0;
